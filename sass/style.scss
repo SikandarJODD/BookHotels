@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-size: 1.1rem;
+}
+
+$blu : #0070f3;
+$fam: 'Nunito',
+sans-serif;
+$fam2:'Montserrat',
+sans-serif;
+$ani : all 0.2s linear;
+
+@mixin flow($x, $y) {
+    font-family: $fam;
+    background: linear-gradient(to right, $x, $y);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+}
+
+// navbar
+.navbar-collapse {
+    padding: 1px 20%;
+    // background: #000;
+}
+
+// navbar brand
+.navbar-brand {
+    letter-spacing: 0.7px;
+    @include flow(rgb(17, 36, 250), rgb(248, 18, 240));
+    position: relative;
+    top: 6px;
+}
+
+// logo 
+.logo_content {
+    display: flex;
+    align-items: center;
+
+}
+
+.logo_img {
+    margin: 0px 15px;
+    height: 40px;
+}
+
+// ul li a
+#navbarSupportedContent ul li a {
+    color: $blu;
+    font-family: $fam;
+    transition: $ani;
+    padding: 0 20px;
+}
+
+#navbarSupportedContent ul li a:hover {
+    color: rgb(22, 22, 23);
+    transform: scale(1.14);
+    transition: $ani;
+}
+
+#a_hov li a:hover {
+    font-size: 1rem;
+    transform: scale(0);
+    color: red;
+}
+
+.cr_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: $ani;
+    // height: 450px;
+    // border-radius: 6px;
+    // padding: 20px;
+
+    h2 {
+        font-weight: bold;
+        @include flow(rgb(36, 90, 252), magenta);
+        flex-wrap: wrap;
+    }
+
+    p {
+        text-transform: capitalize;
+        color: rgb(62, 62, 62);
+        margin-left: 16px;
+        flex-wrap: wrap;
+    }
+
+    span {
+        color: #0070f3;
+        font-weight: 500;
+        flex-wrap: wrap;
+    }
+
+    .btn1 {
+        flex-wrap: wrap;
+        margin-left: 20px;
+
+        button {
+            padding: 7px 17px;
+            border-radius: 25px;
+            background: rgb(232, 253, 232);
+            font-family: $fam2;
+            font-weight: bold;
+            color: #0045f3;
+            outline: none;
+            font-size: 0.9rem;
+            border: 1px solid rgb(57, 172, 4);
+            margin: 3px;
+        }
+    }
+
+    // &:hover {
+    //     background-color: rgb(237, 237, 237);
+    //     transition: $ani;
+    //     border: 1px solid grey;
+    // }
+}
+
+// image 
+.img1 {
+    width: 600px;
+    border-radius: 5px;
+    margin: 0px 30px;
+}
+
+.img2 {
+
+    width: 600px;
+    border-radius: 5px;
+
+}
+
+.carouse {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    padding: 1px 5%;
+    align-items: center;
+    justify-content: center;
+}
+
+.kit_1 {
+    margin-top: 30px;
+}
+
+@media only screen and (max-width:378px) {
+    .kit_1 {
+        margin: 20px 0px;
+    }
+
+    .img2 {
+
+        width: 290px;
+        height: 250px;
+        border-radius: 5px;
+
+    }
+
+}
+
+@media screen and (min-device-width: 400px) and (max-device-width: 500px) {
+
+
+    .kit_1 {
+        margin: 20px 0px;
+    }
+
+    .img2 {
+
+        width: 370px;
+        height: 300px;
+        border-radius: 5px;
+
+    }
+
+    .cr_1 {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-device-width: 1020px) and (max-device-width: 1200px) {
+    .kit_1 {
+        width: 80vw;
+        margin: 20px auto;
+        // margin: 20px 0px;
+    }
+
+    .cr_1 {
+        width: 800px;
+        padding: 20px;
+    }
+
+    .navbar-collapse {
+        padding: 1px 5%;
+    }
+
+    .carouse {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin-top: 30px;
+        padding: 0px 5%;
+        align-items: center;
+        justify-content: space-evenly;
+
+    }
+
+
+    .img2 {
+        display: flex;
+        justify-content: end;
+        align-items: flex-end;
+        width: 370px;
+        height: 300px;
+        border-radius: 5px;
+
+    }
+}

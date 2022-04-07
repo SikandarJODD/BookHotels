@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: 1.1rem;
+}
+
+.navbar-collapse {
+  padding: 1px 20%;
+}
+
+.navbar-brand {
+  letter-spacing: 0.7px;
+  font-family: "Nunito", sans-serif;
+  background: -webkit-gradient(linear, left top, right top, from(#1124fa), to(#f812f0));
+  background: linear-gradient(to right, #1124fa, #f812f0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  position: relative;
+  top: 6px;
+}
+
+.logo_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo_img {
+  margin: 0px 15px;
+  height: 40px;
+}
+
+#navbarSupportedContent ul li a {
+  color: #0070f3;
+  font-family: "Nunito", sans-serif;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  padding: 0 20px;
+}
+
+#navbarSupportedContent ul li a:hover {
+  color: #161617;
+  -webkit-transform: scale(1.14);
+          transform: scale(1.14);
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+#a_hov li a:hover {
+  font-size: 1rem;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  color: red;
+}
+
+.cr_1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.cr_1 h2 {
+  font-weight: bold;
+  font-family: "Nunito", sans-serif;
+  background: -webkit-gradient(linear, left top, right top, from(#245afc), to(magenta));
+  background: linear-gradient(to right, #245afc, magenta);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.cr_1 p {
+  text-transform: capitalize;
+  color: #3e3e3e;
+  margin-left: 16px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.cr_1 span {
+  color: #0070f3;
+  font-weight: 500;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.cr_1 .btn1 {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: 20px;
+}
+
+.cr_1 .btn1 button {
+  padding: 7px 17px;
+  border-radius: 25px;
+  background: #e8fde8;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #0045f3;
+  outline: none;
+  font-size: 0.9rem;
+  border: 1px solid #39ac04;
+  margin: 3px;
+}
+
+.img1 {
+  width: 600px;
+  border-radius: 5px;
+  margin: 0px 30px;
+}
+
+.img2 {
+  width: 600px;
+  border-radius: 5px;
+}
+
+.carouse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 30px;
+  padding: 1px 5%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.kit_1 {
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 378px) {
+  .kit_1 {
+    margin: 20px 0px;
+  }
+  .img2 {
+    width: 290px;
+    height: 250px;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (min-device-width: 400px) and (max-device-width: 500px) {
+  .kit_1 {
+    margin: 20px 0px;
+  }
+  .img2 {
+    width: 370px;
+    height: 300px;
+    border-radius: 5px;
+  }
+  .cr_1 {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-device-width: 1020px) and (max-device-width: 1200px) {
+  .kit_1 {
+    width: 80vw;
+    margin: 20px auto;
+  }
+  .cr_1 {
+    width: 800px;
+    padding: 20px;
+  }
+  .navbar-collapse {
+    padding: 1px 5%;
+  }
+  .carouse {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin-top: 30px;
+    padding: 0px 5%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .img2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    width: 370px;
+    height: 300px;
+    border-radius: 5px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
